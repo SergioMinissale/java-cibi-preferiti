@@ -20,7 +20,7 @@ public class CibiPreferiti {
 		if(resto != 0) {					
 			System.out.println("Il cibo che occupa la posizione mediana è: " + cibiPreferiti[posizioneMediana] );	
 		} else {
-			System.out.println("I cibi che occupano la posizione mediana sono: " + cibiPreferiti[posizioneMediana + 1] + " e " + cibiPreferiti[posizioneMediana - 1]);
+			System.out.println("I cibi che occupano la posizione mediana sono: " + cibiPreferiti[posizioneMediana-1] + " e " + cibiPreferiti[posizioneMediana]);
 			//in questo caso la mediana vera e propria non esiste e quindi ho preso in considerazione 2 posizioni
 		}
 	}
