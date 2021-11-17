@@ -12,16 +12,16 @@ public class CibiPreferiti {
 		System.out.println("Il cibo top, che occupa quindi la prima posizione, è: " + cibiPreferiti[0]);
 		System.out.println("Il cibo preferito ma non troppo, che occupa quindi l'ultima posizione, è: " + cibiPreferiti[lunghezzaArray - 1]);
 		
+		//guardo se l'array è pari oppure dispari
 		int resto = lunghezzaArray % 2;
+		
 		int posizioneMediana = lunghezzaArray/2;
-		if(resto != 0) {
-			
-			System.out.println("Il cibo che occupa la posizione mediana è: " + cibiPreferiti[posizioneMediana] );
-			
+		//se l' array è pari o dispari avrò due situazioni diverse, quindi uso if ed else
+		if(resto != 0) {					
+			System.out.println("Il cibo che occupa la posizione mediana è: " + cibiPreferiti[posizioneMediana] );	
 		} else {
-			
-			System.out.println("Il cibo che occupa la posizione mediana è: " + cibiPreferiti[posizioneMediana + 1] + " e " + cibiPreferiti[posizioneMediana - 1]);
-			//in questo caso la mediana vera e propria non esiste e quindi ho preso in considerazione 2 valori
+			System.out.println("I cibi che occupano la posizione mediana sono: " + cibiPreferiti[posizioneMediana + 1] + " e " + cibiPreferiti[posizioneMediana - 1]);
+			//in questo caso la mediana vera e propria non esiste e quindi ho preso in considerazione 2 posizioni
 		}
 	}
 
